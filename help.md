@@ -430,3 +430,11 @@ class API::V1::LinksController < ApplicationController
     end
 end
 ```
+
+## API Testing
+Generate a Products scaffold for testing:
+```bash
+rails g scaffold Product name:string
+
+rails db:migrate
+```
