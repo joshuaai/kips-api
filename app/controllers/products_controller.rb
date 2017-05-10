@@ -40,6 +40,7 @@ class ProductsController < ApplicationController
       head :ok
     else
       head :unprocessable_entity
+    end
   end
 
   private
