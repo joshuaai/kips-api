@@ -37,9 +37,9 @@ class ProductsController < ApplicationController
   # DELETE /products/1
   def destroy
     if @product.destroy
-      head(:ok)
+      head :ok
     else
-      head(:unprocessable_entity)
+      head :unprocessable_entity
   end
 
   private
