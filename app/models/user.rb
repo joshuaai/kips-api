@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :categories
   # encrypt password
   has_secure_password
 
