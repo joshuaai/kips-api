@@ -1,5 +1,4 @@
 class API::V1::CategoriesController < ApplicationController
-  skip_before_action :authenticate_request
   before_action :set_category, only: [:show, :update, :destroy]
 
   # GET /categories
