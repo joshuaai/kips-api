@@ -1,4 +1,5 @@
 class API::V1::LinksController < ApplicationController
+  skip_before_action :authenticate_request
   before_action :set_category
   before_action :set_link, only: [:show, :update, :destroy]
 
