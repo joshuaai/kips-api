@@ -38,6 +38,7 @@ class API::V1::LinksController < ApplicationController
       head :ok
     else
       head :unprocessable_entity
+    end
   end
 
   private
