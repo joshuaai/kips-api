@@ -34,8 +34,10 @@ class API::V1::LinksController < ApplicationController
 
   # DELETE /categories/:category_id/links/1
   def destroy
-    @link.destroy
-    head :no_content
+    if @link.destroy
+      head :ok
+    else
+      head :unprocessable_entity
   end
 
   private

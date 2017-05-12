@@ -35,8 +35,11 @@ class LinsController < ApplicationController
 
   # DELETE /lins/1
   def destroy
-    @lin.destroy
-    head :no_content
+    if @lin.destroy
+      head :ok
+    else
+      head :unprocessable_entity
+    end
   end
 
   private
